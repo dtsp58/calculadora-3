@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Calculadora</h1>
+  <form id="calculatorForm">
+    <label for="number1">Número 1:</label>
+    <input type="number" id="number1" required>
+
+    <label for="number2">Número 2:</label>
+    <input type="number" id="number2" required>
+
+    <label for="operation">Operação:</label>
+    <input type="radio" name="operation" value="add" checked> Adição
+    <input type="radio" name="operation" value="subtract"> Subtração
+    <input type="radio" name="operation" value="multiply"> Multiplicação
+    <input type="radio" name="operation" value="divide"> Divisão
+
+    <button type="submit">Calcular</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="index.js" type="module"></script>
+</body>
+</html>
